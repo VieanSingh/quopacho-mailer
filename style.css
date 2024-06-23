@@ -1,0 +1,22 @@
+body{
+
+    height: 100dvh;
+    width: 100dvw;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+
+    
+}
+
+#main-container {
+    
+    background-image: linear-gradient(green, greenyellow);
+    height: 100%;
+    width: 100%;
+
+
+    border: solid darkcyan 5px;
+}
+
