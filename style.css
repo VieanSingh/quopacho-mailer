@@ -11,12 +11,24 @@ body{
 }
 
 #main-container {
-    
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+
+
     background-image: linear-gradient(green, greenyellow);
-    height: 100%;
-    width: 100%;
 
 
     border: solid darkcyan 5px;
 }
 
+#sale-banner{
+    display: flex;
+    flex:0.2;
+
+    
+    
+    
+    background-color: darkcyan;
+}
