@@ -10,6 +10,15 @@ body{
     
 }
 
+
+/* animation */
+
+@keyframes email-transition {
+    from{width: 20px;}
+    to{width: auto;}
+}
+
+
 #main-container {
     display: flex;
     flex-direction: column;
@@ -18,10 +27,10 @@ body{
 
 
 
-    background-image: linear-gradient(green, greenyellow);
+    background-image: linear-gradient(gray, cyan);
 
 
-    border: solid darkcyan 5px;
+    border: solid gray 5px;
 }
 #main-header{
     display: flex;
@@ -95,12 +104,20 @@ body{
     
     box-shadow: none;
     border: darkcyan 2px solid;
+    width: 20px;
+
+    
 
     background-color: transparent;
 }
 
 #main-email:focus{
     outline: none;
+    animation-name: email-transition;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-duration: 0.2s;
+
 }
 
 #button-container{
