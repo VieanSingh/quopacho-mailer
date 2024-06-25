@@ -46,9 +46,27 @@ body{
     box-shadow: none;
     border: darkcyan 2px solid;
 
-    background-color: lightgreen;
+    background-color: transparent;
 }
 
-#main-email:active{
+#main-email:focus{
     outline: none;
+}
+
+#button-container{
+    margin: none;
+    padding: none;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#submit-email {
+    flex:0.1;
+    box-shadow: none;
+    border: darkcyan solid 2px;
+
+    background-color: transparent;
+    color: darkcyan;
 }
