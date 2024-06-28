@@ -15,9 +15,19 @@ body{
 
 @keyframes email-transition {
     from{width: 20px;}
-    to{width: auto;}
+    to{width: 120px;}
 }
 
+
+@keyframes button-hover {
+    from{
+        border: none;
+    }
+    to{
+        border: gray 2px solid;
+        border-radius: 3px;
+    }
+}
 
 #main-container {
     display: flex;
@@ -60,8 +70,10 @@ body{
 }
 
 .header-button:hover{
-    border: solid 2px greenyellow;
-    border-radius: 3px;
+    animation-name: button-hover;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -89,6 +101,17 @@ body{
     background-image: linear-gradient(lightblue, darkcyan);
 }
 
+
+
+#mail-image{
+    height: 40px;
+    width:30px
+
+    
+}
+
+
+
 #email-container{
     flex:0.1;
     margin-top: 2px;
@@ -105,6 +128,7 @@ body{
     box-shadow: none;
     border: darkcyan 2px solid;
     width: 20px;
+    
 
     
 
@@ -116,8 +140,7 @@ body{
     animation-name: email-transition;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    animation-duration: 0.2s;
-
+    animation-duration: 1s;
 }
 
 #button-container{
